@@ -9,15 +9,21 @@ project "GymTrackerApp"
 
    includedirs { 
        "dependencies/wxWidgets/include/msvc",
-       "dependencies/wxWidgets/include"
+       "dependencies/wxWidgets/include",
+       "dependencies/SQLiteCpp/include"
    }
-   libdirs { "dependencies/wxWidgets/lib/vc_x64_lib" }
+   libdirs { 
+       "dependencies/wxWidgets/lib/vc_x64_lib",
+       "dependencies/SQLiteCpp/build/Release"
+    
+   }
 
    files { "src/**.cpp", "src/**.hpp", "src/**.c"}
 
    links {
       "wxbase32u",
       "wxmsw32u_core",
+      "SQLiteCpp"
    }
 
     filter "configurations:Debug"
