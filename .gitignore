@@ -404,3 +404,5 @@ FodyWeavers.xsd
 *.sln
 *.vcxproj
 *.vcxproj.user
+
+*.db
