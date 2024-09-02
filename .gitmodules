@@ -1,3 +1,6 @@
 [submodule "dependencies/SQLiteCpp"]
 	path = dependencies/SQLiteCpp
 	url = https://github.com/SRombauts/SQLiteCpp
+[submodule "dependencies/wxWidgets"]
+	path = dependencies/wxWidgets
+	url = https://github.com/wxWidgets/wxWidgets
