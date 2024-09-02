@@ -13,7 +13,7 @@ project "GymTrackerApp"
    }
    libdirs { "dependencies/wxWidgets/lib/vc_x64_lib" }
 
-   files { "src/**.cpp", "src/**.hpp"}
+   files { "src/**.cpp", "src/**.hpp", "src/**.c"}
 
    links {
       "wxbase32u",
@@ -21,11 +21,23 @@ project "GymTrackerApp"
    }
 
     filter "configurations:Debug"
-        defines { "_DEBUG", "__WXMSW__", "WX_STATIC_BUILD", "_ITERATOR_DEBUG_LEVEL=2"}
+        defines { 
+            "_DEBUG", 
+            "__WXMSW__", 
+            "WX_STATIC_BUILD", 
+            "_ITERATOR_DEBUG_LEVEL=2",
+            "SQLITE_ENABLE_COLUMN_METADATA"
+        }
         symbols "On"
 
     filter "configurations:Release"
-        defines { "NDEBUG", "__WXMSW__", "WX_STATIC_BUILD", "_ITERATOR_DEBUG_LEVEL=0" }
+        defines { 
+            "NDEBUG", 
+            "__WXMSW__", 
+            "WX_STATIC_BUILD", 
+            "_ITERATOR_DEBUG_LEVEL=0",
+            "SQLITE_ENABLE_COLUMN_METADATA"
+        }
         optimize "On"
 
     filter "system:windows"

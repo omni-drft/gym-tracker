@@ -398,7 +398,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 /bin/*
-/dependencies/*
+/dependencies/wxWidgets/*
 /obj/*
 
 *.sln

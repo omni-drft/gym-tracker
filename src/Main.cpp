@@ -3,4 +3,7 @@
 #include "MyApp.h"
 #include "MyFrame.h"
 
-wxIMPLEMENT_APP(MyApp);
+IMPLEMENT_APP(MyApp);
+
+
+
