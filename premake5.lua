@@ -21,8 +21,7 @@ project "GymTrackerApp"
    files { "src/**.cpp", "src/**.hpp", "src/**.c"}
 
    links {
-      "wxbase32u",
-      "wxmsw32u_core",
+      "wxmsw33u_core",
       "SQLiteCpp"
    }
 
